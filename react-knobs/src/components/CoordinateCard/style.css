@@ -1,0 +1,6 @@
+.CoordinateCard {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
