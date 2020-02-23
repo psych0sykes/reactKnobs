@@ -1,6 +1,10 @@
 .CoordinateCard {
     display: flex;
     flex-direction: row;
-    justify-items: center;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.CoCounter {
+    margin: 2vh;
+    font-size: 5vh;
 }

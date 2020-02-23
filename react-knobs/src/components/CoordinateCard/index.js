@@ -5,8 +5,8 @@ function CoordinateCard (props) {
 
     return (
         <div className='CoordinateCard'>
-            <div className='XCounter'>{props.xco}</div>
-            <div className='YCounter'>{props.yco}</div>
+            <div className='CoCounter'>X: {props.xco}</div>
+            <div className='CoCounter'>Y: {props.yco}</div>
         </div>
     )
 };

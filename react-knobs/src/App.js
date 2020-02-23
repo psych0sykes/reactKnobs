@@ -1,11 +1,18 @@
-import React from 'react';
+import React , {useState} from 'react';
 import CoordinateCard from './components/CoordinateCard';
 import './App.css';
 
 function App() {
+
+  const [mousePosition , setMousePosition] = useState([0,0])
+
+
+
   return (
-    <div>
-      <CoordinateCard xco={100} yco={200}/>
+    <div onMouseMove={(event) => setMousePosition([event.screenX,event.screenY])}>
+      <div>
+        <CoordinateCard xco={mousePosition[0]} yco={mousePosition[1]}/>
+      </div>
     </div>
   );
 }
